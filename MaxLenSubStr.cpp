@@ -52,7 +52,8 @@ pair<int,string> fun(const string& str)
 
 int main()
 {
-    string str = "abcbcbcbcadd";
+    //output: 2:abc
+    string str = "yyabcdabjcabceg";
     pair<int,string> result = fun(str);
     cout<<result.first<<":"<< result.second<<endl;
     return 0;

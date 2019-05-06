@@ -29,9 +29,9 @@ pair<int,string> fun(const string& str)
     {
         for(int j=i+1;j<length;j++)
         {
-            count =0;
+            count =1;
             int curLen = j-i;
-            for(int k = j+curLen;k<length;k+=curLen)
+            for(int k = j;k<length;k+=curLen)
             {
                 if(subs[i].substr(0,curLen) == subs[k].substr(0,curLen))
                 {
@@ -54,6 +54,7 @@ pair<int,string> fun(const string& str)
 
 int main()
 {
+    //ouput: 4:bc
     string str = "abcbcbcbcadd";
     pair<int,string> result = fun(str);
     cout<<result.first<<":"<< result.second<<endl;
